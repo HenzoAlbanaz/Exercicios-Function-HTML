@@ -1,0 +1,94 @@
+<html>
+<head>
+	<title>Exercício 4</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script type="text/javascript">
+		var menu, valor1, valor2;
+			function adicao(p1,p2)
+			{
+				return(p1+p2);
+			}                                                                                                     
+			function subtracao(p1,p2)
+			{
+				return(p1-p2);
+			}
+			function multiplicacao(p1,p2)
+			{
+				return(p1*p2);
+			}
+			function divisao(p1,p2)
+			{
+				return(p1/p2);
+			}	
+			function sobra(p1,p2)
+			{
+				return(p1%p2);
+			}                                                                                                     
+			function dobro(p1)
+			{
+				return(p1*2);
+			}
+			function quadrado(p1)
+			{
+				return(p1*p1);
+			}
+			function cubo(p1)
+			{
+				return(p1*p1*p1);
+			}	
+			function raiz(p1)
+			{
+				p1=Math.sqrt(p1);
+				return(p1);
+			}                                                                                                     
+				do
+				{
+				menu=parseInt(prompt(" 1 - Adição \n 2 - Subtração \n 3 - Multiplicação \n 4 - Divisão \n 5 - Sobra da divisão \n 6 - Dobro \n 7 - Quadrado \n 8 - Cubo \n 9 - Raiz \n 0 - Saída"));
+					if(menu>0 && menu<10)
+					{
+						valor1=parseFloat(prompt("1º Valor"));
+						valor2=parseFloat(prompt("2º Valor"));
+							if(menu==1)
+							{
+								alert("A soma é: " +adicao(valor1,valor2));
+							}
+								else if(menu==2)
+								{
+									alert("A subtração é: " +subtracao(valor1,valor2));
+								}
+								else if(menu==3)
+								{
+									alert("A multiplicação é: " +multiplicacao(valor1,valor2));
+								}
+								else if(menu==4)
+								{
+									alert("A divisão é: " +divisao(valor1,valor2));
+								}
+								else if(menu==5)
+								{
+									alert("A sobra da divisão é: " +sobra(valor1,valor2));
+								}
+								else if(menu==6)
+								{
+									alert("O dobro é: " +dobro(valor1));
+								}
+								else if(menu==7)
+								{
+									alert("O quadrado é: " +quadrado(valor1));
+								}
+								else if(menu==8)
+								{
+									alert("o cubo é: " +cubo(valor1));
+								}
+								else if(menu==9)
+								{
+									alert("A raiz é: " +raiz(valor1));
+								}
+					}
+				}while(menu!=0);
+				
+	</script>
+</body>
+</html>

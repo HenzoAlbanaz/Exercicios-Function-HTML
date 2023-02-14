@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title>Exercício 3</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script type="text/javascript">
+		var h, g;
+			function pesoideal(h,g){
+				var pi;
+				if(g=="Masculino")
+				{
+					pi=(72.7*h)-58
+					return(pi)
+				}
+				else
+				{
+					pi=(62.1*h)-47.7
+					return(pi)
+				}
+			}
+			g=prompt("Selecione o seu gênero:"+"\n"+"Masculino"+"\n"+"Feminino");
+			h=parseFloat(prompt("Qual a sua Altura?"));
+			alert("O seu peso ideal é: "+ pesoideal(h,g));
+		
+
+	</script>
+</body>
+</html>
